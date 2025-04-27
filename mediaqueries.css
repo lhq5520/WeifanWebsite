@@ -124,4 +124,9 @@
     .text-container {
         text-align: justify;
     }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

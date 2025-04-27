@@ -8,6 +8,7 @@
     <title>Weifan Li</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
             </div>
         </div>
     </nav>
-    <section id="profile">
+    <section id="profile" data-aos="fade-up">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Weifan Li profile picture" />
         </div>
@@ -62,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -104,16 +105,16 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        I'm Weifan Li, a Student at Northeastern starting at Spring 2024.
-                        Before going into Align program(Transfer to computer science), 
-                        I stuied Human Nutrition and love weightlifting!
+                        My name is Weifan Li, a Computer Science student at Northeastern University (Spring 2024 cohort).
+                        Before transitioning into Computer Science through the Align program, I studied Human Nutrition and developed a passion
+                        for weightlifting.
                     </p>
                 </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </section>
-    <section id="experience">
+    <section id="experience" data-aos="fade-up">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
@@ -204,7 +205,7 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
     
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
@@ -214,6 +215,7 @@
                         <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Tamagotchi Game</h2>
+                    <p>A virtual pet game developed with Java and GUI.</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/Tamagotchi'">
                             Github
@@ -228,6 +230,7 @@
                         <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">BattleShip Game</h2>
+                    <p>A classic Battleship game with graphical interface using Java Swing.</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/BattleshipGame-GUI'">
                             Github
@@ -242,6 +245,7 @@
                         <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
                     </div>
                     <h2 class="experience-sub-title project-title">Personal Blog with React</h2>
+                    <p>A responsive personal blog web app built with React and JavaScript.</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/Blog-React'">
                             Github
@@ -255,7 +259,7 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -283,6 +287,10 @@
         <p>Copyright &#169; 2025 Weifan Li. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
