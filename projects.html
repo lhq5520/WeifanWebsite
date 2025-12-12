@@ -14,9 +14,9 @@
         <div class="logo"><a class="logo-link" href="index.html">Weifan Li</a></div>
         <div>
             <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="mind.html">My Mind</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -30,9 +30,9 @@
                 <span></span>
             </div>
             <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                 <li><a href="about.html" onclick="toggleMenu()">About</a></li>
                 <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="mind.html" onclick="toggleMenu()">My Mind</a></li>
                 <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -43,56 +43,188 @@
             <h1 class="title">Projects</h1>
 
             <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/project-1.png" alt="Tamagotchi Game" class="project-img" />
-                        </div>
-                        <h2 class="experience-sub-title project-title">Tamagotchi Game</h2>
-                        <p>A virtual pet game developed with Java and GUI.</p>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/Tamagotchi'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/Tamagotchi'">
-                                Live Demo
-                            </button>
-                        </div>
+            <div class="about-containers">
+                <!-- Mountify -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-5.png" alt="Mountify" class="project-img" />
                     </div>
 
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/project-2.png" alt="Battleship Game" class="project-img" />
-                        </div>
-                        <h2 class="experience-sub-title project-title">BattleShip Game</h2>
-                        <p>A classic Battleship game with graphical interface using Java Swing.</p>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/BattleshipGame-GUI'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/BattleshipGame-GUI'">
-                                Live Demo
-                            </button>
-                        </div>
+                    <h2 class="project-title">Mountify</h2>
+                    <div class="project-stack">
+                        <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Redis</span><span>NextAuth</span><span>Stripe</span>
                     </div>
 
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/project-3.png" alt="Personal Blog" class="project-img" />
-                        </div>
-                        <h2 class="experience-sub-title project-title">Personal Blog</h2>
-                        <p>A responsive personal blog web app built with React and JavaScript.</p>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/lhq5520/Blog-React'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://blog.weifanx.com'">
-                                Live Demo
-                            </button>
-                        </div>
+                    <p class="project-desc">
+                        Production-style e-commerce platform with authentication, checkout, and webhooks—designed to be scalable and
+                        maintainable.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/Mountify'">Github</button>
+                    </div>
+                </div>
+
+                <!-- WeifanWrt -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-7.png" alt="WeifanWrt" class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">WeifanWrt (Custom ImmortalWrt Build)</h2>
+                    <div class="project-stack">
+                        <span>OpenWrt</span><span>ImmortalWrt</span><span>Linux</span><span>Shell</span><span>Git</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Custom firmware workflow with reproducible configs, versioned releases, and practical notes for a real
+                        home-lab setup.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/Weifanwrt'">Github</button>
+                    </div>
+                </div>
+
+                <!-- Personal Blog -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Personal Blog" class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">Personal Blog</h2>
+                    <div class="project-stack">
+                        <span>React</span><span>JavaScript</span><span>Responsive UI</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Responsive personal blog with a clean UI and a simple content flow—built to ship quickly and iterate.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/Blog-React'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://blog.weifanx.com'">Live
+                            Demo</button>
+                    </div>
+                </div>
+
+                <!-- GIS Parking Finder -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png" alt="Vancouver Parking Finder" class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">Vancouver Parking Finder (GIS)</h2>
+                    <div class="project-stack">
+                        <span>Python</span><span>GIS</span><span>Plotly</span><span>Haversine</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Desktop dashboard using Vancouver Open Data to recommend nearest street parking via geospatial distance
+                        search and interactive charts.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/vancouver-food-vendor-parking-finder'">Github</button>
+                    </div>
+                </div>
+
+                <!-- LrcApi Patch -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-6.png" alt="Lyrics Fetch Api " class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">LrcApi Open-Source Patch (NetEase Fix + Docker)</h2>
+                    <div class="project-stack">
+                        <span>Docker</span><span>Node.js</span><span>REST API</span><span>Self-hosting</span>
+                    </div>
+
+                    <p class="project-desc">
+                        An open-source lyrics/cover REST API originally created by the upstream author. I contributed a bug fix
+                        for the NetEase integration and packaged it for Docker deployment, sharing the improvement back with the
+                        community.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/LrcApi-v1.6-docker-patch'">Github</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Calculator -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-8.png" alt="Vehicle Trade-In vs Private Sale Calculator" class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">Vehicle Trade-In vs Private Sale Calculator</h2>
+                    <div class="project-stack">
+                        <span>Python</span><span>Finance</span><span>What-if</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Quick what-if calculator comparing trade-in vs private-sale outcomes by modeling tax, fees, and net
+                        proceeds.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/Vehicle-Trade-In-VS.-Private-Sale-Calculator'">Github</button>
+                    </div>
+                </div>
+
+                <!-- Tamagotchi -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" alt="Tamagotchi Game" class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">Tamagotchi Game</h2>
+                    <div class="project-stack">
+                        <span>Java</span><span>GUI</span><span>Game Logic</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Java virtual pet game with a GUI and state-driven gameplay—focused on clean logic and user interaction.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/Tamagotchi'">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/Tamagotchi'">Live Demo</button>
+                    </div>
+                </div>
+
+                <!-- Battleship -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Battleship Game" class="project-img" />
+                    </div>
+
+                    <h2 class="project-title">BattleShip Game</h2>
+                    <div class="project-stack">
+                        <span>Java</span><span>Swing</span><span>MVC</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Java Swing Battleship with a graphical UI, turn-based logic, and a maintainable MVC-style structure.
+                    </p>
+
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/BattleshipGame-GUI'">Github</button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/lhq5520/BattleshipGame-GUI'">Live Demo</button>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 <footer>
