@@ -7,7 +7,6 @@
     <title>Weifan Li</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
@@ -39,27 +38,40 @@
         </div>
     </nav>
     <main>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="Weifan Li profile picture" />
-            </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Weifan Li</h1>
-                <p class="section__text__p2">Aspiring Software Engineer</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
-                        Download CV
-                    </button>
-                    <button class="btn btn-color-1" onclick="location.href='projects.html'">
-                        View Projects
-                    </button>
-                </div>
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-                        onclick="location.href='https://www.linkedin.com/in/weifan-li-911358184/'" />
-                    <img src="./assets/github.png" alt="My Github profile" class="icon"
-                        onclick="location.href='https://github.com/lhq5520'" />
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+
+            <div class="page-container">
+                <div class="about-grid">
+                    <div class="about-photo">
+                        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic rounded-img" />
+                    </div>
+
+                    <div class="about-content">
+                        <p class="lead">
+                            I’m a Computer Science graduate student at Northeastern University, focused on building real-world
+                            full-stack applications with clean architecture and pragmatic trade-offs.
+                        </p>
+
+                        <div class="about-meta">
+                            <div class="meta-block">
+                                <h3>Education</h3>
+                                <p><strong>M.S. Computer Science</strong> — Northeastern University (2024–2026)</p>
+                                <p><strong>B.S. Human Nutrition</strong> — Virginia Tech (2018–2022)</p>
+                            </div>
+
+                            <div class="meta-block">
+                                <h3>Focus</h3>
+                                <p>Backend systems, data modeling, performance & caching, and product-driven development.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-cta">
+                            <a class="btn btn-color-2" href="projects.html">Browse Projects</a>
+                            <a class="btn btn-color-1" href="contact.html">Contact</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
